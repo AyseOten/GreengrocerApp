@@ -1,0 +1,16 @@
+
+<div class="toolbar">
+    <button class= "left-click" (click)="leftclick()"[disabled]="leftButtonDisable">
+        <img src="assets/arrow/left.png" >
+    </button>
+    <!-- <div class="fruit-images" *ngFor="let headerArr of displayArr">
+        <img src="{{headerArr.img}}">
+    </div> -->
+    <div class=fruit-buttons *ngFor="let element of displayArr">
+        <!-- <img src="{{element.img}}"> -->
+        <input type="image" src="{{element.img}}" (click)="addNewItem(element)" />
+    </div>
+    <button class= "right-click" (click)="rightclick()" [disabled]="rightButtonDisable">
+        <img src="assets/arrow/right.png" >
+    </button>
+</div>

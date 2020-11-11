@@ -1,0 +1,45 @@
+.toolbar{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbar img{
+    width: 100px;
+    height:100px;
+}
+
+.toolbar button:hover{
+  border:none;
+  outline: 0;
+}
+
+.left-click{
+  background-color: white;
+  border:0;
+}
+
+.right-click{
+  background-color: white;
+  border:0;
+
+}
+
+.fruit-buttons input{
+  width: 80px;
+  height:80px;
+}
+
+.fruit-buttons input:hover{
+  width: 100px;
+  height:100px;
+}
+
+.fruit-buttons input:focus{
+  border:none;
+  outline:0;
+  width: 100px;
+  height:100px;
+}
+  

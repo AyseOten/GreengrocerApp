@@ -1,0 +1,28 @@
+<app-header class="header" [headerArray]="fruits" (sendImage)="addNewItem($event)"></app-header>
+<div class=container>
+  <div class=left-side>
+    <div class=frame>
+      <input class="up-button" type="image" (click)="upclick()" [disabled]="upButtonDisable"
+        src="assets/arrow/up.png" />
+
+      <div class=fruit-basket *ngFor="let display of displayArrBasket">
+        <img src="{{display.img}}">
+        <p>x{{display.count}}</p>
+      </div>
+
+      <input class="down-button" type="image" (click)="downclick()" [disabled]="downButtonDisable"
+        src="assets/arrow/down.png" />
+
+    </div>
+  </div>
+  <div class=right-side>
+    <span>Sepetim :</span>
+    <div class="fruits-prices" *ngFor="let item of items">
+      <span> {{item.turkishName}} x{{item.count}} = {{item.price*item.count}} TL</span>
+    </div>
+    <hr style="width:50%">
+    <div class="sum">
+      <span>Toplam fiyat :{{sumPrice}} TL </span>
+    </div>
+  </div>
+</div>
